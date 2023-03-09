@@ -3,6 +3,7 @@ import './navbar.css'
 import {FaChild} from 'react-icons/fa'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
+import logo from '../..//assets/logo34.png'
 
 const Navbar = () => {
   const [active, setActive]=useState('navBar');
@@ -20,7 +21,7 @@ const Navbar = () => {
 
         <div className="logoDiv">
           <a href="#" className='logo flex'>
-            <h1><FaChild className="icon"/> MedicaMea</h1>
+            <a href="#"><img src={logo} alt="" /></a>
           </a>
         </div>
 
