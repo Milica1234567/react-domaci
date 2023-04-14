@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './navbar.css'
+import { Link } from "react-router-dom";
 
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
@@ -28,13 +29,13 @@ const Navbar = () => {
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="#" className="navLink">Početna</a>
+              <Link to="/" className="navLink">Početna</Link>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Blog</a>
+            <Link to="/" className="navLink">Blog</Link>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">O meni</a>
+            <Link to="/about" className="navLink">O meni</Link>
             </li>
             <li className="navItem">
               <a href="#" className="navLink">Kontakt</a>
