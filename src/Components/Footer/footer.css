@@ -138,4 +138,11 @@
 }
 .footer .secContent .footerCard .footerSocials .icon:hover {
   color: var(--SecondaryColor);
+}
+
+/*media*/
+@media screen and (min-width: 500px) {
+  .footer .secContent .footerCard .logoDiv {
+    width: 200px;
+  }
 }/*# sourceMappingURL=footer.css.map */

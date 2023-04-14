@@ -17,7 +17,7 @@ const Data = [
     imgSrc: img1,
     artTitle: 'Lorem ipsum',
     subtitle: 'Podnaslov',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',
     readMore: '#'
     },
     {
@@ -25,7 +25,7 @@ const Data = [
     imgSrc: img2,
     artTitle: 'Lorem ipsum',
     subtitle: 'Podnaslov',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',
     readMore: '#'
     },
     {
@@ -33,28 +33,28 @@ const Data = [
     imgSrc: img3,
     artTitle: 'Lorem ipsum',
     subtitle: 'Podnaslov',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',      readMore: '#'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',      readMore: '#'
     },
     {
       id: 4,
       imgSrc: img4,
       artTitle: 'Lorem ipsum',
       subtitle: 'Podnaslov',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',      readMore: '#'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',      readMore: '#'
       },
     {
       id: 5,
       imgSrc: img5,
       artTitle: 'Lorem ipsum',
       subtitle: 'Podnaslov',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',      readMore: '#'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',      readMore: '#'
       },
     {
       id: 6,
       imgSrc: img6,
       artTitle: 'Lorem ipsum',
       subtitle: 'Podnaslov',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. Phasellus id dictum neque, a vulputate purus. Donec vitae auctor nibh. Aliquam at sem vel felis commodo efficitur. Nullam nisi lectus, dapibus vitae mollis in, lacinia et enim. Donec quis semper dolor, vel finibus odio.',      readMore: '#'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non augue turpis. ',      readMore: '#'
         },
     
   

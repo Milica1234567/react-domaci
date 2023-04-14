@@ -86,6 +86,7 @@
             .input{
                 height: 40px;
                 padding: 0 1rem;
+                margin-right: 1rem;
                 background: var(--inputColor);
                 border-radius: 3rem;
                 border: none;
@@ -111,10 +112,13 @@
             }
 
             .zakazi{
-
+                
                 .btn{
+                    
                     width: 100%;
-                    margin: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 20px;
                     color: whitesmoke;
                     cursor: pointer;
                 }
@@ -133,7 +137,7 @@
                 font-weight: 600;
 
                 &:hover{
-                    color: var(--PrimaryColor);
+                    color: var(--SecondaryColor);
                 }
             }
         }
@@ -141,3 +145,74 @@
     }
 }
 
+//media
+
+@media  screen and (min-width: 500px){
+    .home{
+        .homeContent{
+            .textDiv{
+                .smallText{
+                    font-size: 16px;
+                }
+
+                .homeTitle{
+                    position: relative;
+                    font-size: 2.3rem;
+                    width: max-content;
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 145px;
+                        right: 0px;
+                        bottom: 5px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .cardDiv{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .home{
+        .homeContent{
+            .cardDiv{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .home{
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home{
+        height: 90vh;
+
+        .homeContent{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .cardDiv{
+            padding: 2rem 1 rem;
+            grid-template-columns: repeat(3,1fr);
+            .input{
+                margin-bottom: 1rem;
+            }
+           
+        }
+    }
+}

@@ -52,7 +52,7 @@ const Home = () => {
             </div>
           </div>
 
-
+    
           <div className="zakazi flex">
             
             <button className='btn'>ZAKAŽI</button>
