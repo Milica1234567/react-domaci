@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from '../../Components/Main/Main'
+import Ab from '../Components/About/Ab'
 
 function About() {
   return (
     <>
-      <Main/>
+    <Ab/>
     </>
   )
 }

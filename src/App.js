@@ -4,7 +4,7 @@ import Footer from './Components/Footer/Footer'
 import Home from './Components/Home/Home'
 import Main from './Components/Main/Main'
 import Navbar from './Components/Navbar/Navbar'
-import About from './Pages/about/About'
+import Ab from './Components/About/Ab'
 import Pocetna from './Pages/Pocetna'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -19,11 +19,12 @@ const App = () => {
         
         <Route path='/' element={<Pocetna/>}></Route>
         
-        <Route path='/about' element={<About/>}></Route>
+        <Route path='/about' element={<Ab/>}></Route>
         
       </Routes> 
 
-      <Footer/>
+    <Footer/>
+      
     </BrowserRouter>
     /*<>
     <Navbar/>
