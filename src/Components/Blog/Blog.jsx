@@ -1,24 +1,23 @@
 import React, {useState }from 'react'
 import './blog.css'
-import JsonData from '../../assets/MOCK_DATA.json'
+import JsonData from '../../assets/MOCK_DATAc.json'
 import ReactPaginate from 'react-paginate'
 
 const Blog = () => {
 
-    const[users, setUsers] = useState(JsonData.slice(0,30))
+    const[users, setUsers] = useState(JsonData.slice(0,10))
     const [pageNumber, setPageNumber]=useState(0);
 
-    const usersPerPage=3
+    const usersPerPage=1
     const pagesVisited=pageNumber*usersPerPage
 
     const displayArtical = users.slice(pagesVisited, pagesVisited+usersPerPage).map((user)=>{
         return(
-            
             <div className="user">
-            <h3>{user.id}</h3>
-            <h3>{user.first_name}</h3>
-            <h3>{user.last_name}</h3>
-            <h3>{user.email}</h3>
+            <h1 className='naslov'>{user.naslov}</h1>
+            <img className='slika' src={user.imageSrc} alt="" />
+            <h3 className='podnaslov'>{user.description}</h3>
+            <p className='tekst'>{user.arical}</p>
             </div>
         )
     })
@@ -33,7 +32,7 @@ const Blog = () => {
     return (
         <div className="blog">
             {displayArtical}
-            <ReactPaginate
+            <ReactPaginate 
             previousLabel={"Prethodna"}
             nextLabel={"Sledeca"}
             pageCount={pageCount}

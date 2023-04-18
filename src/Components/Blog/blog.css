@@ -15,7 +15,7 @@
 }
 
 .blog {
-  padding: 200px;
+  padding: 100px;
 }
 
 .paginationButns {
@@ -39,4 +39,25 @@
 .paginationButns a:hover {
   background-color: whitesmoke;
   color: var(--SecondaryColor);
+}
+
+.naslov {
+  padding: 35px;
+}
+
+.slika {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+.podnaslov {
+  padding-bottom: 10px;
+}
+
+.tekst {
+  padding-left: 20px;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=blog.css.map */
