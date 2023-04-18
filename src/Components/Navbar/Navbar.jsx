@@ -21,7 +21,7 @@ const Navbar = () => {
       <header className="header flex">
 
         <div className="logoDiv">
-          <a href="#" className='log flex'>
+          <a href="#" className='logo flex'>
             <a href="#"><img src={logo} alt="" /></a>
           </a>
         </div>
