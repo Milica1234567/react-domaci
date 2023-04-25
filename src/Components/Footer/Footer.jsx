@@ -42,26 +42,26 @@ const Footer = () => {
         <div className="contactDiv flex">
           <div data-aos="fade-up" className="text">
             
-            <h2>MEDICA MEA</h2>
             
-            <small>Naš newsletter</small>
+            
+            <h4>MedicaMea - Kontaktirajte nas</h4>
           </div>
 
           <div className="inputDiv flex">
             <form ref={form} onSubmit={posaljiMail}>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
+              
+              <input type="text" name="user_name" placeholder='Vaše ime'/>
+              
+              <input type="email" name="user_email" placeholder='Vaš email'/>
+              
+              <textarea name="message" placeholder='Poruka'/>
+              <input className='btn' type="submit" value="Send" />
             </form>
             
           </div>
         </div>
 
-        <div data-aos="fade-up" className="footerCard flex">
+        <div  className="footerCard flex">
           <div className="footerIntro flex">
             <div className="logoDiv">
               <a href="#" className='logo flex'>
