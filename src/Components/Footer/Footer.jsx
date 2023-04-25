@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react'
+import React,  {useEffect, useRef} from 'react'
 import './footer.css'
 
+import emailjs from '@emailjs/browser'
 import video2 from '../../assets/vid2.mp4'
 import logo from '../../assets/logo34.png'
 
@@ -16,6 +17,21 @@ const Footer = () => {
   useEffect(()=>{
     Aos.init({duration: 2000})
   }, [])
+
+  const form = useRef();
+
+  const posaljiMail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_brada6o', 'template_7nbosep', form.current, '0Opsb8UOhI3HKOeMl')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset()
+  };
+ 
   return (
     <section className='footer'>
       <div className="videoDiv">
@@ -32,10 +48,16 @@ const Footer = () => {
           </div>
 
           <div className="inputDiv flex">
-            <input data-aos="fade-up" type="text" placeholder='Vaš email'/>
-            <button data-aos="fade-up" className='btn flex'type='submit'>
-              PRIJAVI ME<FiSend className='icon'/>
-            </button>
+            <form ref={form} onSubmit={posaljiMail}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form>
+            
           </div>
         </div>
 
